@@ -1,0 +1,7 @@
+INFO     - 2024-03-15 23:51:56,069 | PathObject(name='Write_data_to-csv', extension=None, is_dir=True, parent='Python_projects')
+INFO     - 2024-03-15 23:51:56,069 | PathObject(name='python_deep', extension=None, is_dir=True, parent='Python_projects')
+INFO     - 2024-03-15 23:51:56,070 | PathObject(name='Bots', extension=None, is_dir=True, parent='Python_projects')
+INFO     - 2024-03-15 23:51:56,070 | PathObject(name='Get_started', extension='pdf', is_dir=False, parent='Python_projects')
+INFO     - 2024-03-15 23:51:56,070 | PathObject(name='.git', extension=None, is_dir=True, parent='Python_projects')
+INFO     - 2024-03-15 23:51:56,071 | PathObject(name='python_deeptest_dir', extension=None, is_dir=True, parent='Python_projects')
+INFO     - 2024-03-15 23:51:56,071 | PathObject(name='Encrypt_PDF', extension=None, is_dir=True, parent='Python_projects')

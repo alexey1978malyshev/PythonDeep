@@ -14,14 +14,13 @@
 
 from collections import namedtuple
 from pathlib import Path
-
 from logger import log
 
-PATH = Path('C:\\', 'Study', 'Python_2', 'homeworks', 'hw_15', 'task_1')
+PATH = Path('/', 'home', 'alexey', 'Python_projects')
 LOG_PATH = Path.cwd() / 'log.txt'
 
 
-def get_dir_info(path: Path, logfile: Path):
+def get_dir_content(path: Path, logfile: Path):
     PathObject = namedtuple('PathObject', ('name', 'extension', 'is_dir', 'parent'))
     parent = path.parts[-1]
     for item in path.iterdir():
@@ -36,4 +35,4 @@ def get_dir_info(path: Path, logfile: Path):
 
 
 if __name__ == '__main__':
-    get_dir_info(PATH, LOG_PATH)
+    get_dir_content(PATH, LOG_PATH)
