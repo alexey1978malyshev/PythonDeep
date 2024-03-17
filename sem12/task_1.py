@@ -3,7 +3,14 @@
 Параметр К передается при создании экземпляра.
 Добавьте метод для просмотра ранее вызываемых значений и их факториала.'''
 
+"""Задание №2
+Доработаем задачу 1.
+Создайте менеджер контекста, который при выходе
+сохраняет значения в JSON файл.
+"""
+
 from math import factorial
+from json import dump
 
 
 class Factorial:
@@ -21,9 +28,20 @@ class Factorial:
         return self.history
 
 
+    def __enter__(self):
+        return self
+
+    def __exit__(self, exc_type,exc_val, exc_tb):
+        with open('f.json', 'w', encoding='utf-8') as s:
+            dump(self.history, s)
+
+
+
 f = Factorial(3)
-for i in range(1, 11):
-    print(f'{i}! = {f(i)}')
+with f as json_f:
+    for i in range(1, 11):
+        print(f'{i}! = {f(i)}')
+
 print(f.get_history())
 
 
